@@ -11,18 +11,18 @@
     "desktop": {
       "revealed": 0,
       "screenshot": "/home/user/.doubao/agent_mode/workspace/.sessions/38447590299817218/agents/m_0cwRqxEVrkK/miaoke-mail/_shots/index_desktop.jpg",
-      "screenshotBytes": 117611,
+      "screenshotBytes": 125667,
       "truncated": false,
       "structure": {
         "title": "喵科大企业邮 · 企业级域名邮箱服务",
-        "firstH1": "喵科大企业邮。",
+        "firstH1": "企业级域名邮箱安全 · 稳定 · 高效",
         "viewport": {
           "w": 1440,
           "h": 900
         },
         "fullpage": {
           "w": 1440,
-          "h": 3398
+          "h": 3545
         },
         "counts": {
           "section": 6,
@@ -58,14 +58,14 @@
       "truncated": false,
       "structure": {
         "title": "喵科大企业邮 · 企业级域名邮箱服务",
-        "firstH1": "喵科大企业邮。",
+        "firstH1": "企业级域名邮箱安全 · 稳定 · 高效",
         "viewport": {
           "w": 390,
           "h": 844
         },
         "fullpage": {
           "w": 390,
-          "h": 4681
+          "h": 5136
         },
         "counts": {
           "section": 6,
@@ -89,12 +89,48 @@
           "url": "file:///home/user/.doubao/agent_mode/workspace/.sessions/38447590299817218/agents/m_0cwRqxEVrkK/miaoke-mail/assets/miaoke-logo.png"
         }
       ],
-      "localImageHint": "含义：页面里存在 file:// 本地图片引用。云电脑交付的 HTML 不能包含文件系统引用。 | 修法：对每张图跑 `lark-cli drive +html-image-upload --file <图片路径>`，把返回里 data.url 的链接换进 <img src>；图片文件本身保留在 assets/ 里不要删。 | 豁免：本地电脑（Computer OS 为 Windows / Mac）不报此项——那里用 assets/ 相对路径引用是规定做法。本规则只匹配 file://，http(s)/data URI 都不会报。"
+      "localImageHint": "含义：页面里存在 file:// 本地图片引用。云电脑交付的 HTML 不能包含文件系统引用。 | 修法：对每张图跑 `lark-cli drive +html-image-upload --file <图片路径>`，把返回里 data.url 的链接换进 <img src>；图片文件本身保留在 assets/ 里不要删。 | 豁免：本地电脑（Computer OS 为 Windows / Mac）不报此项——那里用 assets/ 相对路径引用是规定做法。本规则只匹配 file://，http(s)/data URI 都不会报。",
+      "edgeHuggingTextWarning": [
+        {
+          "tag": "div.ov",
+          "text": "企业级域名邮箱服务",
+          "left": 0,
+          "viewportWidth": 390,
+          "paddingLeft": "0px",
+          "parentTag": "div.sec-head",
+          "parentPaddingLeft": "0px",
+          "parentMarginLeft": "0px",
+          "parentMaxWidth": "none"
+        },
+        {
+          "tag": "h1",
+          "text": "企业级域名邮箱",
+          "left": 0,
+          "viewportWidth": 390,
+          "paddingLeft": "0px",
+          "parentTag": "div",
+          "parentPaddingLeft": "0px",
+          "parentMarginLeft": "0px",
+          "parentMaxWidth": "none"
+        },
+        {
+          "tag": "p",
+          "text": "喵科大企业邮为企业与个人提供专属",
+          "left": 0,
+          "viewportWidth": 390,
+          "paddingLeft": "0px",
+          "parentTag": "div",
+          "parentPaddingLeft": "0px",
+          "parentMarginLeft": "0px",
+          "parentMaxWidth": "none"
+        }
+      ],
+      "edgeHuggingTextHint": "warning · 含义（仅 mobile shot 触发）：正文/标题文字的渲染左边缘贴到视口边（left ≤ 1px），左内边距完全塌陷。**桌面截图永远看不出这个问题**——它只在视口宽度 ≤ 容器 max-width 时出现。 | 最高频成因是 `padding` 简写把继承来的左右内边距清零：`.wrap{max-width:1180px;margin:0 auto;padding:0 28px}` 定义了左右 28px，而 `.hero-inner{padding:88px 0 96px}` 只想加上下内边距，简写却把左右一起重设为 0；元素同时挂着这两个 class（`class=\"wrap hero-inner\"`）时后写的简写胜出。宽屏下 `margin:0 auto` 的居中边距掩盖了它——1440px 视口时 (1440−1180)/2 = 130px，看起来完全正常；视口一旦 ≤ max-width，居中边距归零，padding 又是 0，文字就直接贴屏幕边缘。**`margin:0 auto` 不是 padding 的替代品**，它只在 viewport > max-width 时存在。 | 看字段判断：`parentPaddingLeft` 和 `parentMarginLeft` 同时为 `0px`、`parentMaxWidth` 有具体值，就是这个成因。 | 修法：把 `padding: A 0 B` 换成 `padding-block: A B`（逻辑属性，只动上下，不碰左右），或显式写全 `padding: A 28px B`。不要改成 `margin: 0 auto` 就完事。 | 豁免：(1) 祖先为 `position:absolute/fixed/sticky`、负向 `translateX`、`left < -40px` 的元素（移动端收起的抽屉、无障碍 skip link、绝对定位 badge）**本规则已自动过滤**，无需处理；(2) 刻意的满版设计——整块背景图上的装饰性大字、全宽色带里的标题，视觉上贴边成立；(3) `text-align:center` 的长文本在窄屏两侧各余几像素属正常，本规则阈值 1px 已排除这类。"
     }
   },
   "engine": "playwright",
   "chromiumExec": "/opt/vm/preinstall/ms-playwright/chromium-1169/chrome-linux/chrome",
-  "elapsedSec": 4.85,
+  "elapsedSec": 4.74,
   "schemaVersion": 2,
   "status": "warning",
   "engineInfo": {
@@ -117,7 +153,7 @@
       {
         "viewport": "desktop",
         "path": "/home/user/.doubao/agent_mode/workspace/.sessions/38447590299817218/agents/m_0cwRqxEVrkK/miaoke-mail/_shots/index_desktop.jpg",
-        "size": 117611,
+        "size": 125667,
         "visualCoverage": {
           "complete": true,
           "reason": null
@@ -139,7 +175,7 @@
   "summary": {
     "blocker": 0,
     "error": 0,
-    "warning": 2,
+    "warning": 5,
     "info": 0
   },
   "findings": [
@@ -155,6 +191,63 @@
         "url": "file:///home/user/.doubao/agent_mode/workspace/.sessions/38447590299817218/agents/m_0cwRqxEVrkK/miaoke-mail/assets/miaoke-logo.png"
       },
       "dedupeKey": "localImageWarnings|desktop|img|0"
+    },
+    {
+      "ruleId": "edgeHuggingTextWarning",
+      "severity": "warning",
+      "kind": "layout",
+      "viewport": "mobile",
+      "selector": "div.ov",
+      "evidence": {
+        "tag": "div.ov",
+        "text": "企业级域名邮箱服务",
+        "left": 0,
+        "viewportWidth": 390,
+        "paddingLeft": "0px",
+        "parentTag": "div.sec-head",
+        "parentPaddingLeft": "0px",
+        "parentMarginLeft": "0px",
+        "parentMaxWidth": "none"
+      },
+      "dedupeKey": "edgeHuggingTextWarning|mobile|div.ov|0"
+    },
+    {
+      "ruleId": "edgeHuggingTextWarning",
+      "severity": "warning",
+      "kind": "layout",
+      "viewport": "mobile",
+      "selector": "h1",
+      "evidence": {
+        "tag": "h1",
+        "text": "企业级域名邮箱",
+        "left": 0,
+        "viewportWidth": 390,
+        "paddingLeft": "0px",
+        "parentTag": "div",
+        "parentPaddingLeft": "0px",
+        "parentMarginLeft": "0px",
+        "parentMaxWidth": "none"
+      },
+      "dedupeKey": "edgeHuggingTextWarning|mobile|h1|1"
+    },
+    {
+      "ruleId": "edgeHuggingTextWarning",
+      "severity": "warning",
+      "kind": "layout",
+      "viewport": "mobile",
+      "selector": "p",
+      "evidence": {
+        "tag": "p",
+        "text": "喵科大企业邮为企业与个人提供专属",
+        "left": 0,
+        "viewportWidth": 390,
+        "paddingLeft": "0px",
+        "parentTag": "div",
+        "parentPaddingLeft": "0px",
+        "parentMarginLeft": "0px",
+        "parentMaxWidth": "none"
+      },
+      "dedupeKey": "edgeHuggingTextWarning|mobile|p|2"
     },
     {
       "ruleId": "localImageWarnings",
@@ -176,6 +269,12 @@
       "severity": "warning",
       "viewport": "desktop",
       "selector": "img"
+    },
+    {
+      "ruleId": "edgeHuggingTextWarning",
+      "severity": "warning",
+      "viewport": "mobile",
+      "selector": "div.ov"
     }
   ],
   "reportPath": "/home/user/.doubao/agent_mode/workspace/.sessions/38447590299817218/agents/m_0cwRqxEVrkK/miaoke-mail/_shots/report.json"
