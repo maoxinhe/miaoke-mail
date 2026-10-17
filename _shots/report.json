@@ -11,10 +11,10 @@
     "desktop": {
       "revealed": 0,
       "screenshot": "/home/user/.doubao/agent_mode/workspace/.sessions/38447590299817218/agents/m_0cwRqxEVrkK/miaoke-mail/_shots/index_desktop.jpg",
-      "screenshotBytes": 108700,
+      "screenshotBytes": 117611,
       "truncated": false,
       "structure": {
-        "title": "喵科大企业邮 · @camzy.tech 域名邮箱",
+        "title": "喵科大企业邮 · 企业级域名邮箱服务",
         "firstH1": "喵科大企业邮。",
         "viewport": {
           "w": 1440,
@@ -22,7 +22,7 @@
         },
         "fullpage": {
           "w": 1440,
-          "h": 3325
+          "h": 3398
         },
         "counts": {
           "section": 6,
@@ -57,7 +57,7 @@
       "sliceHint": "按顺序 Read slices 里的各分片。",
       "truncated": false,
       "structure": {
-        "title": "喵科大企业邮 · @camzy.tech 域名邮箱",
+        "title": "喵科大企业邮 · 企业级域名邮箱服务",
         "firstH1": "喵科大企业邮。",
         "viewport": {
           "w": 390,
@@ -65,7 +65,7 @@
         },
         "fullpage": {
           "w": 390,
-          "h": 4494
+          "h": 4681
         },
         "counts": {
           "section": 6,
@@ -94,7 +94,7 @@
   },
   "engine": "playwright",
   "chromiumExec": "/opt/vm/preinstall/ms-playwright/chromium-1169/chrome-linux/chrome",
-  "elapsedSec": 6.32,
+  "elapsedSec": 4.85,
   "schemaVersion": 2,
   "status": "warning",
   "engineInfo": {
@@ -117,7 +117,7 @@
       {
         "viewport": "desktop",
         "path": "/home/user/.doubao/agent_mode/workspace/.sessions/38447590299817218/agents/m_0cwRqxEVrkK/miaoke-mail/_shots/index_desktop.jpg",
-        "size": 108700,
+        "size": 117611,
         "visualCoverage": {
           "complete": true,
           "reason": null
